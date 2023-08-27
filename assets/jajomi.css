@@ -136,3 +136,30 @@ color: #fff;
   text-transform: uppercase;
   font-size: 12px;
 }*/
+
+/* ----------------------------------- */
+/* Alles in deze volgorde houden */
+/* Collection pages Price */
+.card-information .price__container {
+  font-family: 'Balham';
+  font-size: 16px;
+}
+/* Collection pages Title */
+.card__heading.h5 {
+  font-family: 'Balham';
+  font-size: 16px;
+}
+/* Product page Title */
+.product__title h1 {
+  font-size: 24px;
+}
+/* Product page Price */
+#MainContent .price__container {
+  font-size: 16px;  
+}
+/* Product page Price */
+.related-products__heading.h2 {
+  font-family: 'Balham';
+  font-size: 20px;
+  text-align: center;
+}
