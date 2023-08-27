@@ -1598,3 +1598,10 @@ a.product__text {
     border: none;
   }
 }
+
+/* ======================================== */
+/* Remove Sold badge next to price on Product page */
+.product .price--sold-out .price__badge-sold-out {
+    display: none;
+}
+/* ======================================== */
