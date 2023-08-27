@@ -125,3 +125,14 @@ color: #fff;
 background-color: #B48F5F;
 color: #fff;
 }
+
+/* ----------------------------------- */
+/* Header Title */
+/* .h2{
+   font-size: 36px;
+}*/
+/* Header Menu */
+.header__menu-item {
+  text-transform: uppercase;
+  font-size: 12px;
+}*/
