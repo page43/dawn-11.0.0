@@ -6,9 +6,28 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "16931592667478bd61": {
+      "type": "apps",
+      "blocks": {
+        "dcc3dcbd-2abc-4434-a1d1-ab3638a0e907": {
+          "type": "shopify:\/\/apps\/form-builder-myappgurus\/blocks\/form\/a1074dc9-da75-4be4-856f-aa55cf4ede25",
+          "settings": {
+            "show_form": true,
+            "form_token": "OWyvKven8CV3uf7zoZ28b20pQMZXzZjC"
+          }
+        }
+      },
+      "block_order": [
+        "dcc3dcbd-2abc-4434-a1d1-ab3638a0e907"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16931592667478bd61"
   ]
 }
