@@ -230,6 +230,13 @@
         font-weight: var(--font-body-weight);
       }
 
+{% comment %} custom font {% endcomment %}
+            @font-face {
+              font-family: 'Balham';
+              src: url(https://cdn.shopify.com/s/files/1/0756/3919/3931/files/Balham.woff2?v=1687357917) format('woff2');
+            }
+{% comment %} ======================================== {% endcomment %}
+
       @media screen and (min-width: 750px) {
         body {
           font-size: 1.6rem;
@@ -238,6 +245,9 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+{% comment %} custom stylesheet {% endcomment %}
+    {{ 'jajomi.css' | asset_url | stylesheet_tag }}
+{% comment %} ======================================== {% endcomment %}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>

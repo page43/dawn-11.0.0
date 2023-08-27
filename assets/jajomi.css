@@ -1,0 +1,17 @@
+/* ======================================== */
+/* for custom fonts, copied from base.css.
+/* font referenced in theme.liquid */
+/* ======================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-family: 'Balham';
+  color: #3B3B3B;
+}
