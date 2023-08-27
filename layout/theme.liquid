@@ -348,5 +348,19 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  </body>
+
+  {% comment %} /* ======================================== */ {% endcomment %}
+    <style>
+      {% comment %} padding under social media icons {% endcomment %}
+      .footer__content-top.page-width {
+        padding-bottom: 0;
+      }
+      {% comment %} padding above payment icons {% endcomment %}
+      .footer__content-bottom.scroll-trigger.animate--slide-in {
+        padding-top: 0;
+        margin-top: 0;
+      }
+  {% comment %} /* ======================================== */ {% endcomment %}
+    </style>
+</body>
 </html>
