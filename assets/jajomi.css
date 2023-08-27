@@ -114,3 +114,14 @@ h1.main-page-title.page-title.h0 {
     border-color: #FFFFFF;
   }
 }
+
+/* ----------------------------------- */
+/* Text selection color */
+::-moz-selection {
+background-color: #B48F5F;
+color: #fff;
+}
+::selection {
+background-color: #B48F5F;
+color: #fff;
+}
