@@ -57,3 +57,10 @@ h1.main-page-title.page-title.h0 {
   font-size: 24px;
   text-align: center;
 }
+
+/* Verzenden & retourneren (retour form in app) */
+/* Make form the same width as text */
+#shopify-block-576742c4-7434-4b02-ad1a-fb263d1b63a6 {
+  max-width: 710px;
+  margin: auto;
+}
