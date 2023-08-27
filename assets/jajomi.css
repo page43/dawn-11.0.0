@@ -64,3 +64,22 @@ h1.main-page-title.page-title.h0 {
   max-width: 710px;
   margin: auto;
 }
+
+/* ----------------------------------- */
+/* Indentation Algemene Voorwaarden */
+.indent-rte-ol {
+  list-style-type: decimal !important;
+  text-indent: -2.4% !important;
+}
+.indent-rte-ul {
+  list-style-type: disc !important;
+  text-indent: -2.4% !important;
+}
+/*Padding will indent the words, but not the style marker*/
+/*li.padding {
+  padding-left: 30px;
+}*/
+/*Margin will indent style marker as well*/
+/*li.margin {
+  margin-left: 30px;
+}*/
