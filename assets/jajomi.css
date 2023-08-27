@@ -178,3 +178,12 @@ h2.rich-text__heading {
   font-size: 14px;
   margin: 0;
 }
+
+/* ----------------------------------- */
+/* Remove divider above payment icons */
+.footer {
+    border-top: none !important;
+}
+.footer__content-bottom {
+  border-top:none !important;
+}
