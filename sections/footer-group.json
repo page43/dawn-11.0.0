@@ -1,1 +1,54 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","settings":{"color_scheme":"background-1","newsletter_enable":true,"newsletter_heading":"Subscribe to our emails","enable_follow_on_shop":true,"show_social":true,"enable_country_selector":true,"enable_language_selector":true,"payment_enable":true,"show_policy":false,"margin_top":0,"padding_top":36,"padding_bottom":36}}},"order":["footer"]}
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "cd6fd617-5997-479e-86b5-7f69fdb956a3": {
+          "type": "text",
+          "settings": {
+            "heading": "Jajomi sieraden en tassen",
+            "subtext": "<p>E-mail: info@jajomi.nl<\/p><p>Telefoon (WhatsApp): 06-18129655‬<\/p><p>IBAN: NL86ABNA0121707725<\/p><p>KvK-nummer: 89445015<\/p><p>BTW-identificatienummer: NL004729312B59<\/p>"
+          }
+        },
+        "c0bcda4d-378a-4c13-91a2-3e894e3a2af6": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Informatie",
+            "menu": "footer"
+          }
+        },
+        "46f2c0be-f9d9-4110-b1f9-ad6e977a2d90": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Service",
+            "menu": "voettekstmenu_2"
+          }
+        }
+      },
+      "block_order": [
+        "cd6fd617-5997-479e-86b5-7f69fdb956a3",
+        "c0bcda4d-378a-4c13-91a2-3e894e3a2af6",
+        "46f2c0be-f9d9-4110-b1f9-ad6e977a2d90"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": false,
+        "newsletter_heading": "",
+        "enable_follow_on_shop": false,
+        "show_social": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
