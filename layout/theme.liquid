@@ -387,3 +387,31 @@
       }
     });
   </script>
+
+  <script>
+    /*ezfyignore*/
+    /* EZFY Code Snippet Starter
+    ========================================== */
+    document.addEventListener("shopify:section:load", function(e){
+      if (Shopify.designMode){
+        const $ezfy = e.target;
+    
+        if ([...$ezfy.classList].filter(e => e.includes("ezfy-")).length <= 0){
+          return;
+        }
+    
+        const $scripts = $ezfy.querySelectorAll(`script`);
+    
+        const id = $ezfy.getAttribute("id").split("shopify-section-")[1];
+    
+        for (var each of $scripts){
+          const script = each.innerHTML
+           eval(script);
+        }
+    
+        if (window[id] && window[id].hasOwnProperty("refreshCodeAtCustomizePage")){
+           window[id].refreshCodeAtCustomizePage(e)
+        }
+      }
+    });
+  </script>
