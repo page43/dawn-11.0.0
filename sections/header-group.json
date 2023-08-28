@@ -2,6 +2,57 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "261e2c70-be4e-42b4-a994-6125b3fe3163": {
+      "type": "cstm-announcement-bar",
+      "blocks": {
+        "05620f85-3190-4e55-964a-5828a816893c": {
+          "type": "header",
+          "settings": {
+            "message": "Zomeractie: Oorbellen Bohemian 2 voor € 50"
+          }
+        },
+        "aa558f2c-c9a6-4ee1-afbb-e3a271307319": {
+          "type": "header",
+          "disabled": true,
+          "settings": {
+            "message": "Gratis verzending vanaf € 50"
+          }
+        },
+        "143f9724-9b1c-4053-a881-21af9ceb84a2": {
+          "type": "header",
+          "disabled": true,
+          "settings": {
+            "message": "Verzending binnen 3 werkdagen"
+          }
+        },
+        "fdefd79b-2119-48f6-b96b-fb102ecde802": {
+          "type": "header",
+          "disabled": true,
+          "settings": {
+            "message": "Uniek & handgemaakt"
+          }
+        }
+      },
+      "block_order": [
+        "05620f85-3190-4e55-964a-5828a816893c",
+        "aa558f2c-c9a6-4ee1-afbb-e3a271307319",
+        "143f9724-9b1c-4053-a881-21af9ceb84a2",
+        "fdefd79b-2119-48f6-b96b-fb102ecde802"
+      ],
+      "settings": {
+        "show_announcement_bar": true,
+        "homepage-only": false,
+        "autoplay": false,
+        "delay": "5000",
+        "colorBackground": "#b48f5f",
+        "colorText": "#ffffff",
+        "font_size": 14,
+        "height": 40,
+        "bold-text": false,
+        "link_on": true,
+        "link": "https:\/\/jajomi.nl\/collections\/handgemaakte-oorbellen\/products\/oorbellen-bohemian"
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -16,6 +67,7 @@
       "block_order": [
         "announcement-bar-0"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-1",
         "show_line_separator": true,
@@ -46,6 +98,7 @@
     }
   },
   "order": [
+    "261e2c70-be4e-42b4-a994-6125b3fe3163",
     "announcement-bar",
     "header"
   ]

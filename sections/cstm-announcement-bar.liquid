@@ -1,0 +1,183 @@
+<link rel="stylesheet" href="swiper-bundle.min.css" />
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer="defer"></script>
+{% if template.name == 'index' or section.settings.homepage-only == false %}
+{%- if  section.blocks.size > 0 and section.settings.show_announcement_bar -%}
+<div id="announcement-bar" class="swiper-container  zwk-announcement-bar">
+  <div class="swiper-wrapper">
+    {%- for block in section.blocks -%}
+      <div class="swiper-slide zwk-message">
+        {% if section.settings.link_on %}
+          <a href="{{ section.settings.link }}" class="custom-announcement-bar__link">
+          {{block.settings.message}}
+          </a>
+        {% else %}
+          {{block.settings.message}}
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<style>
+    .zwk-announcement-bar{
+    background:{{section.settings.colorBackground}};
+    position: relative;
+    overflow: hidden;
+  }
+    .zwk-announcement-bar .zwk-message{
+    {% if section.settings.bold-text %}
+      font-weight: bold;
+    {% endif %}
+    text-align:center;
+    color:{{section.settings.colorText}};
+    font-size:{{section.settings.font_size}}px;
+  }
+    #announcement-bar {
+    /* height: 40px; Adjust the height as needed */
+    /* font-size: 12px; Customize the font size */
+    height:{{section.settings.height}}px;
+  }
+
+.custom-announcement-bar__link {
+  color:{{section.settings.colorText}};
+}
+.custom-announcement-bar__link:link {text-decoration: none;}
+.custom-announcement-bar__link:visited {text-decoration: none;}
+.custom-announcement-bar__link:hover {text-decoration: underline;}
+.custom-announcement-bar__link:active {text-decoration: none;}
+
+.swiper-slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 750px) {
+  .swiper-slide {
+    padding: 0 10%;
+  }
+}
+  
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  var swiper = new Swiper('#announcement-bar', {
+    direction: 'vertical',
+    loop: true,
+    {%- if section.settings.autoplay %}
+    autoplay: {
+      delay: {{section.settings.delay}}
+    },
+      {%- endif -%}
+    effect: 'slide',
+    speed: 500, // Adjust the animation speed (in milliseconds)
+  });
+});
+
+</script>
+{%- endif -%}
+{%- endif -%}
+{% schema %}
+  {
+    "name": "Aankondigingsbalk Nieuw",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_announcement_bar",
+        "default": true,
+        "label": "Toon aankondigingsbalk"
+      },
+      {
+        "type": "checkbox",
+        "id": "homepage-only",
+        "default": false,
+        "label": "Toon alleen op Homepage"
+      },
+      {
+        "type": "checkbox",
+        "id": "autoplay",
+        "default": false,
+        "label": "Autoplay"
+      },
+      {
+        "type": "text",
+        "id": "delay",
+        "label": "Tijd tussen aankondigingen (in ms)",
+        "default": "5000"
+      },
+      {
+        "type": "color",
+        "id": "colorBackground",
+        "label": "Achtergrondkleur",
+        "default": "#F7F7F7"
+      },
+      {
+        "type": "color",
+        "id": "colorText",
+        "label": "Tekstkleur",
+        "default": "#3B3B3B"
+      },
+      {
+        "type": "range",
+        "id": "font_size",
+        "min": 12,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "Lettergrootte",
+        "default": 14
+      },
+      {
+        "type": "range",
+        "id": "height",
+        "min": 30,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "Regelhoogte",
+        "default": 40
+      },
+      {
+        "type": "checkbox",
+        "id": "bold-text",
+        "default": false,
+        "label": "Vet"
+      },
+      {
+        "type": "checkbox",
+        "id": "link_on",
+        "default": false,
+        "label": "Maak link"
+      },
+      {
+        "type": "url",
+        "id": "link",
+        "label": "Kies of plak link"
+      }
+],
+"blocks": [
+      {
+        "type": "header",
+        "name": "Aankondiging",
+        "settings": [
+          {
+              "id": "message",
+              "type": "text",
+              "label": "Aankondigingstekst"
+          }
+        ]
+      }
+],
+"presets":[
+    {
+        "name":"Aankondigingsbalk Nieuw"
+    }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
