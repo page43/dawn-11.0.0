@@ -46,6 +46,9 @@
       "block_order": [
         "template--19544846729547__a3269c3b-0fe6-40b1-8a1d-102dd27ea410-heading-1"
       ],
+      "custom_css": [
+        "h2 {color: #b48f5f;}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
