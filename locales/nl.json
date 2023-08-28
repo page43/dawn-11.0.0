@@ -7,7 +7,7 @@
       "login_form_password_placeholder": "Je wachtwoord",
       "login_form_error": "Wachtwoord onjuist!",
       "login_form_submit": "Invoeren",
-      "admin_link_html": "Ben je de winkeleigenaar? <a href=\"/admin\" class=\"link underlined-link\">Log hier in</a>",
+      "admin_link_html": "Ben je de winkeleigenaar? <a href=\"\/admin\" class=\"link underlined-link\">Log hier in<\/a>",
       "powered_by_shopify_html": "Deze winkel wordt door {{ shopify }} aangedreven"
     },
     "social": {
@@ -40,9 +40,9 @@
       "reset": "Zoekterm wissen"
     },
     "cart": {
-      "view": "Winkelwagen bekijken ({{ count }})",
-      "item_added": "Artikel toegevoegd aan winkelwagen",
-      "view_empty_cart": "Winkelwagen bekijken"
+      "view": "Winkelmandje bekijken ({{ count }})",
+      "item_added": "Artikel toegevoegd aan winkelmandje",
+      "view_empty_cart": "Winkelmandje bekijken"
     },
     "share": {
       "copy_to_clipboard": "Link kopiëren",
@@ -106,9 +106,10 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "Aan winkelwagen toevoegen",
+      "add_to_cart": "Aan winkelmandje toevoegen",
       "description": "Beschrijving",
       "on_sale": "Aanbieding",
+      "product_variants": "Productvarianten",
       "quantity": {
         "label": "Aantal",
         "input_label": "Aantal voor {{ product }}",
@@ -117,8 +118,7 @@
         "minimum_of": "Minimum van {{ quantity }}",
         "maximum_of": "Maximum van {{ quantity }}",
         "multiples_of": "Stappen van {{ quantity }}",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> in winkelwagen",
-        "note": "Hoeveelheidsregels bekijken"
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> in winkelmandje"
       },
       "price": {
         "from_price_html": "Vanaf {{ price }}",
@@ -127,8 +127,8 @@
         "unit_price": "Eenheidsprijs"
       },
       "share": "Dit product delen",
-      "sold_out": "Uitverkocht",
-      "unavailable": "Niet beschikbaar",
+      "sold_out": "Verkocht",
+      "unavailable": "Verkocht",
       "vendor": "Verkoper",
       "video_exit_message": "{{ title }} opent een video op volledig scherm in hetzelfde venster.",
       "xr_button": "Bekijk in je ruimte",
@@ -137,8 +137,8 @@
         "view_store_info": "Winkelgegevens bekijken",
         "check_other_stores": "Controleer de beschikbaarheid bij andere winkels",
         "pick_up_available": "Afhaling is beschikbaar",
-        "pick_up_available_at_html": "Afhaling is beschikbaar bij <span class=\"color-foreground\">{{ location_name }}</span>",
-        "pick_up_unavailable_at_html": "Afhaling is momenteel niet beschikbaar bij <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_available_at_html": "Afhaling is beschikbaar bij <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_unavailable_at_html": "Afhaling is momenteel niet beschikbaar bij <span class=\"color-foreground\">{{ location_name }}<\/span>",
         "unavailable": "Kan beschikbaarheid voor afhalen niet laden",
         "refresh": "Vernieuwen"
       },
@@ -153,27 +153,19 @@
         "image_available": "Afbeelding {{ index }} is nu beschikbaar in gallery-weergave"
       },
       "view_full_details": "Alle details bekijken",
-      "include_taxes": "Inclusief btw.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Verzendkosten</a> worden berekend bij de checkout.",
+      "include_taxes": " ",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Verzendkosten<\/a> worden berekend bij de checkout.",
       "choose_options": "Opties kiezen",
       "choose_product_options": "Opties kiezen voor {{ product_name }}",
-      "value_unavailable": "{{ option_value }} - Niet beschikbaar",
-      "variant_sold_out_or_unavailable": "Variant uitverkocht of niet beschikbaar",
+      "value_unavailable": "{{ option_value }} ▶ verkocht",
+      "variant_sold_out_or_unavailable": "Variant verkocht of niet beschikbaar",
       "inventory_in_stock": "Op voorraad",
       "inventory_in_stock_show_count": "{{ quantity }} op voorraad",
       "inventory_low_stock": "Voorraad laag",
       "inventory_low_stock_show_count": "Lage voorraad: nog maar {{ quantity }}",
-      "inventory_out_of_stock": "Niet op voorraad",
+      "inventory_out_of_stock": "Verkocht",
       "sku": "SKU",
-      "inventory_out_of_stock_continue_selling": "Op voorraad",
-      "volume_pricing": {
-        "title": "Volumeprijsstelling",
-        "note": "Volumeprijsstelling beschikbaar",
-        "minimum": "Meer dan {{ quantity }}",
-        "price_at_each": "{{ price }}/st.",
-        "price_range": "{{ minimum }} - {{ maximum }}"
-      },
-      "product_variants": "Productvarianten"
+      "inventory_out_of_stock_continue_selling": "Op voorraad"
     },
     "modal": {
       "label": "Mediagalerij"
@@ -192,8 +184,8 @@
       },
       "max_price": "De hoogste prijs is {{ price }}",
       "product_count": {
-        "one": "{{ product_count }} korting op {{ count }} producten",
-        "other": "{{ product_count }} korting op {{ count }} producten"
+        "one": "{{ product_count }} van {{ count }} producten",
+        "other": "{{ product_count }} van {{ count }} producten"
       },
       "product_count_simple": {
         "one": "{{ count }} product",
@@ -202,7 +194,7 @@
       "reset": "Opnieuw instellen",
       "sort_button": "Sorteren",
       "sort_by_label": "Sorteer op:",
-      "to": "Aan",
+      "to": "Tot",
       "clear_filter": "Filter verwijderen",
       "filter_selected_accessibility": "{{ type }} ({{ count }} filters geselecteerd)",
       "show_more": "Meer weergeven",
@@ -240,7 +232,7 @@
       "pages": "Pagina's"
     },
     "cart": {
-      "cart": "Winkelwagen"
+      "cart": "Winkelmandje"
     },
     "contact": {
       "form": {
@@ -269,18 +261,20 @@
       }
     },
     "cart": {
-      "title": "Je winkelwagen",
-      "caption": "Artikelen in winkelwagen",
+      "title": "Winkelmandje",
+      "caption": "Artikelen in winkelmandje",
       "remove_title": "{{ title }} verwijderen",
-      "note": "Speciale instructies voor bestelling",
-      "checkout": "Afrekenen",
-      "empty": "Je winkelwagen is leeg",
-      "cart_error": "Er is een fout opgetreden bij het bijwerken van je winkelwagen. Probeer het opnieuw.",
-      "cart_quantity_error_html": "Je kunt maar {{ quantity }} van dit artikel toevoegen aan je winkelwagen.",
-      "taxes_and_shipping_policy_at_checkout_html": "Belastingen, kortingen en <a href=\"{{ link }}\">verzending</a> worden bij de checkout berekend",
-      "taxes_included_but_shipping_at_checkout": "Inclusief belasting; verzendkosten en kortingen worden bij de checkout berekend",
-      "taxes_included_and_shipping_policy_html": "Inclusief belasting. <a href=\"{{ link }}\">Verzending</a> en kortingen worden bij de checkout berekend.",
-      "taxes_and_shipping_at_checkout": "Belastingen, kortingen en verzending worden bij de checkout berekend",
+      "subtotal": "Subtotaal",
+      "new_subtotal": "Nieuw subtotaal",
+      "note": "Voeg een opmerking toe",
+      "checkout": "Doorgaan met contactinfo",
+      "empty": "Je winkelmandje is leeg",
+      "cart_error": "Er is een fout opgetreden bij het bijwerken van je winkelmandje. Probeer het opnieuw.",
+      "cart_quantity_error_html": "Je kunt maar {{ quantity }} van dit artikel toevoegen aan je winkelmandje.",
+      "taxes_and_shipping_policy_at_checkout_html": "<a href=\"{{ link }}\">Verzendkosten<\/a> worden berekend bij de checkout",
+      "taxes_included_but_shipping_at_checkout": "Belasting inbegrepen en verzendkosten worden berekend bij de checkout",
+      "taxes_included_and_shipping_policy_html": "<a href=\"{{ link }}\">Verzendkosten<\/a> worden berekend bij de checkout.",
+      "taxes_and_shipping_at_checkout": "Verzendkosten worden berekend bij de checkout",
       "headings": {
         "product": "Product",
         "price": "Prijs",
@@ -291,10 +285,8 @@
       "update": "Bijwerken",
       "login": {
         "title": "Heb je een account?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Log in</a> om sneller af te rekenen."
-      },
-      "estimated_total": "Geschat totaal",
-      "new_estimated_total": "Nieuw geschat totaal"
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Log in<\/a> om sneller af te rekenen."
+      }
     },
     "footer": {
       "payment": "Betaalmethoden"
@@ -314,7 +306,7 @@
     "collection_template": {
       "title": "Collectie",
       "empty": "Geen producten gevonden",
-      "use_fewer_filters_html": "Minder filters gebruiken of <a class=\"{{ class }}\" href=\"{{ link }}\">alles verwijderen</a>"
+      "use_fewer_filters_html": "Minder filters gebruiken of <a class=\"{{ class }}\" href=\"{{ link }}\">alles verwijderen<\/a>"
     },
     "video": {
       "load_video": "Video laden: {{ description }}"
@@ -337,34 +329,13 @@
       "carousel": "Carrousel",
       "announcement": "Aankondiging",
       "announcement_bar": "Aankondigingsbalk"
-    },
-    "quick_order_list": {
-      "product_total": "Productsubtotaal",
-      "view_cart": "Winkelwagen bekijken",
-      "each": "{{ money }}/st",
-      "product": "Product",
-      "variant": "Variant",
-      "variant_total": "Totaal variant",
-      "items_added": {
-        "one": "{{ quantity }} artikel toegevoegd",
-        "other": "{{ quantity }} artikelen toegevoegd"
-      },
-      "items_removed": {
-        "one": "{{ quantity }} artikel verwijderd",
-        "other": "{{ quantity }} artikelen verwijderd"
-      },
-      "product_variants": "Productvarianten",
-      "total_items": "Totaal aantal artikelen",
-      "remove_all_items_confirmation": "Alle {{ quantity }} artikelen uit je winkelwagen verwijderen?",
-      "remove_all": "Alles verwijderen",
-      "cancel": "Annuleren"
     }
   },
   "localization": {
-    "country_label": "Land/regio",
+    "country_label": "Land\/regio",
     "language_label": "Taal",
     "update_language": "Taal bijwerken",
-    "update_country": "Land/regio bijwerken"
+    "update_country": "Land\/regio bijwerken"
   },
   "customer": {
     "account": {
@@ -393,7 +364,7 @@
       "address1": "Adres 1",
       "address2": "Adres 2",
       "city": "Plaats",
-      "country": "Land/regio",
+      "country": "Land\/regio",
       "province": "Provincie",
       "zip": "Postcode",
       "phone": "Telefoonnummer",
@@ -503,9 +474,148 @@
       "max_characters": "Maximaal {{ max_chars }} tekens",
       "email_label_optional_for_no_js_behavior": "E-mailadres ontvanger (optioneel)",
       "send_on": "JJJJ-MM-DD",
-      "send_on_label": "Verzenden op (optioneel)",
-      "expanded": "Formulier voor ontvanger cadeaubon uitgevouwen",
-      "collapsed": "Formulier voor ontvanger cadeaubon ingeklapt"
+      "send_on_label": "Verzenden op (optioneel)"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "stock": {
+        "sold_out_label": "Verkocht",
+        "title": "Verkocht",
+        "items_unavailable_notice": "Sommige artikelen zijn niet meer beschikbaar. Je winkelmandje is aangepast.",
+        "removed_from_cart_notice": "Verwijderd uit winkelmandje",
+        "remove_from_cart_button_label": "Verwijder uit winkelmandje",
+        "go_back_to_cart_button_label": "Terug naar winkelmandje",
+        "empty_cart_label": "Je winkelmandje is leeg",
+        "quantity_update": {
+          "description": "De beschikbare hoeveelheden voor deze artikelen zijn gewijzigd en je winkelmandje is bijgewerkt."
+        },
+        "unpurchasable_product": {
+          "header": "Sommige artikelen zijn uit je winkelmandje verwijderd"
+        },
+        "unpurchasable_product_generic": {
+          "header": "Sommige artikelen zijn uit je winkelmandje verwijderd"
+        },
+        "unshippable_product": {
+          "message": {
+            "one": "Dit artikel wordt uit je winkelmandje verwijderd, omdat er voor je adres geen bezorgmethoden beschikbaar zijn.",
+            "other": "Dit artikel wordt uit je winkelmandje verwijderd, omdat er voor je adres geen bezorgmethoden beschikbaar zijn."
+          }
+        }
+      },
+      "throttle": {
+        "merchandise": {
+          "sold_out": "Verkocht"
+        },
+        "inventory": {
+          "partial_inventory_banner": "Sommige artikelen in je winkelmandje zijn verkocht, je kunt ze niet afrekenen.",
+          "sold_out": {
+            "heading": "Het winkelmandje is verkocht"
+          }
+        },
+        "cart_summary_heading": "Winkelmandje",
+        "footer": {
+          "body": "Artikelen in je winkelmandje worden pas gereserveerd, als je de checkout hebt voltooid."
+        }
+      },
+      "general": {
+        "autocomplete_powered_by_google": " ",
+        "cart": "Winkelmandje",
+        "back_to_cart": "Terug naar winkelmandje",
+        "contact_us_html": "Neem contact met ons op voor meer informatie",
+        "full_price": "Totaal:",
+        "submit_order_button_label": "Bestelling plaatsen",
+        "back_button_label": "Terug",
+        "submit": "Plaatsen"
+      },
+      "order_summary": {
+        "vat_label_html": " ",
+        "recurring_total_tooltip": "Exclusief verzending, douanerechten of eventuele kortingen.",
+        "taxes_label": " ",
+        "shopping_cart_label": "Winkelmandje",
+        "cart_does_not_meet_discount_requirements_notice": "Kortingscode <strong style=\"text-transform:uppercase\">{{ code }}<\/strong> geldt niet voor de artikelen in je winkelmandje"
+      },
+      "shipping": {
+        "no_rates_for_cart_or_destination_notice": "Er zijn geen verzendmethoden beschikbaar voor je winkelmandje of adres"
+      },
+      "shipping_errors": {
+        "shipping_method_not_available": "Je winkelmandje is bijgewerkt en de artikelen die je hebt toegevoegd, kunnen niet naar je adres worden verzonden. Verwijder de artikelen om je bestelling te voltooien.",
+        "shipping_method_not_available_generic": {
+          "other": "Sommige artikelen in je winkelmandje kunnen niet worden verzonden naar het ingevoerde adres. Controleer het adres en zorg ervoor dat alle velden correct zijn ingevuld. Probeer het daarna opnieuw."
+        }
+      },
+      "failed_payment": {
+        "payment_not_processed_text": "Er zijn geen kosten in rekening gebracht. Keer terug naar je winkelmandje om je aankoop te voltooien.",
+        "return_to_cart_button_label": "Terug naar winkelmandje"
+      },
+      "marketing": {
+        "unsubscribe": {
+          "description": "Je ontvangt geen herinneringen over je winkelmandje meer van ons."
+        }
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Je winkelmandje is bijgewerkt op basis van het land van verzending."
+      },
+      "contextual_availability": {
+        "products_not_available": {
+          "one": "Dit product wordt verwijderd uit je winkelmandje, omdat het niet beschikbaar is in je land\/regio.",
+          "other": "Deze producten worden verwijderd uit je winkelmandje, omdat ze niet beschikbaar zijn in je land\/regio."
+        }
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "message": {
+            "one": "Dit artikel wordt uit je winkelmandje verwijderd, omdat er voor jouw adres geen bezorgmethoden beschikbaar zijn.",
+            "other": "Dit artikel wordt uit je winkelmandje verwijderd, omdat er voor jouw adres geen bezorgmethoden beschikbaar zijn."
+          }
+        }
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Terug naar winkelmandje",
+        "company_location_changed": "Je winkelmandje is aangepast. Controleer je bestelling voordat je deze verstuurt."
+      },
+      "alternative_payment_method_banner": {
+        "or": "of kies iDEAL, PayPal, etc. op de betaalpagina"
+      }
+    },
+    "notices": {
+      "cart": {
+        "product_sold_out": "'{{ name }}' is reeds verkocht.",
+        "all_items_in_cart": "{{ name }} zit al in je winkelmandje.",
+        "only_n_items_available": "Je kunt slechts {{ count }} {{ name }} aan je winkelmandje toevoegen.",
+        "too_many_items_in_cart": "Je kunt geen {{ name }} meer aan je winkelmandje toevoegen.",
+        "empty_update": "kan leeg winkelmandje niet bijwerken",
+        "generic_error": "Fout in winkelmandje",
+        "too_many_line_items_error": "Je winkelmandje kan niet meer dan {{ max }} artikelen bevatten.",
+        "stock_problems_html": "Een of meer artikelen zijn niet meer beschikbaar. We hebben een <a href='{{ link }}'>bijgewerkt winkelmandje<\/a> klaargezet.",
+        "changed": "Winkelmandje gewijzigd",
+        "shipping_address_not_required": "Bij dit winkelmandje is geen verzending nodig",
+        "bundle_requires_components": "Kan het bundelproduct '{{ name }}' niet aan het winkelmandje toevoegen.",
+        "gift_card_with_components_not_supported": "Kan het bundelproduct '{{ name }}' niet aan het winkelmandje toevoegen."
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "out_of_stock": "Verkocht"
+        }
+      }
+    },
+    "links": {
+      "powered_by_shopify": " "
+    },
+    "errors": {
+      "gift_card_already_applied": "Code is al op je winkelmandje toegepast"
+    },
+    "page_titles": {
+      "shopping_cart": "Winkelmandje"
+    }
+  },
+  "customer_accounts": {
+    "B2B": {
+      "location_selection": {
+        "description": "Als je al artikelen in je winkelmandje hebt, heeft het wijzigen van de locatie mogelijk invloed op de prijzen en hoeveelheden in je winkelmandje."
+      }
     }
   }
 }
