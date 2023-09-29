@@ -19,11 +19,6 @@
             "custom_liquid": "{% if product.available %}\n\n<div class=\"instock-pulse\">\n  <span class=\"icon--pulsing\"><\/span>\n  <span>In voorraad, klaar om te verzenden<\/span>\n<\/div>\n\n<style>\n\n.instock-pulse {\n  font-size: 10px;\n  text-transform: uppercase;\n  display: flex;\n  flex-wrap: nowrap;\n  align-items: center;\n}\n\n.icon--pulsing {\n  position: relative;\n  width: 20px;\n  height: 20px;\n  margin-right: 10px;\n}\n\n.icon--pulsing:after, \n.icon--pulsing:before {\n    background: #54c63a;\n    width: 10px;\n    height: 10px;\n    border-radius: 10px;\n    position: absolute;\n    left: 0;\n    top: 0;\n    content: \"\";\n    margin: 5px;\n}\n\n@keyframes inventory-pulse{\n  0%{\n    opacity:0.5;\n  }\n  to{\n    transform:scale(2.5);\n    opacity:0;\n  }\n}\n\n.icon--pulsing:before {\n    animation: inventory-pulse 2s linear infinite;\n}\n\n<\/style>\n\n{% endif %}"
           }
         },
-        "appio-rating-badge": {
-          "type": "shopify:\/\/apps\/amazon-reviews-by-appio\/blocks\/rating-badge\/569167b3-e5d6-4314-9866-f51281b506d7",
-          "settings": {
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -58,7 +53,6 @@
         "title",
         "price",
         "a2890a31-f329-408e-bc37-19fac197aee6",
-        "appio-rating-badge",
         "description",
         "buy_buttons",
         "201555af-0507-4192-9ec4-b18de77a08dd",
@@ -113,24 +107,6 @@
         "padding_bottom": 12
       }
     },
-    "appio-reviews-widget-app-section7448": {
-      "type": "apps",
-      "blocks": {
-        "appio-reviews-widget": {
-          "type": "shopify:\/\/apps\/amazon-reviews-by-appio\/blocks\/reviews-widget\/569167b3-e5d6-4314-9866-f51281b506d7",
-          "settings": {
-            "padding_x": 0,
-            "padding_y": 0
-          }
-        }
-      },
-      "block_order": [
-        "appio-reviews-widget"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -152,7 +128,6 @@
   },
   "order": [
     "main",
-    "appio-reviews-widget-app-section7448",
     "related-products"
   ]
 }

@@ -203,7 +203,7 @@
               </p>
             {%- endif -%}
 
-            <div class="appio-rating-badge" data-id="{{ card_product.id }}" data-rating="{{ card_product.metafields.appio_reviews.reviews_summary.average }}" data-raters="{{ card_product.metafields.appio_reviews.reviews_summary.total }}"></div>
+            
 {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
             {%- if card_product.quantity_price_breaks_configured? -%}
               <div class="card__information-volume-pricing-note">

@@ -150,7 +150,7 @@
       },
       "appio-integration": {
         "type": "shopify:\/\/apps\/appio-reviews\/blocks\/integration\/569167b3-e5d6-4314-9866-f51281b506d7",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       },
